@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Carousel from "react-elastic-carousel";
 import Item from "./Item";
 import logo from '../images/logo.png';
+import './collection.css';
 
 import image1 from '../images/Abaddon.jpg';
 import image2 from '../images/AURORA.jpg';
@@ -102,115 +103,137 @@ const breakPoints = [
 
 
 const Collection = () => {
-    return(
-         <div class="container">
-          <nav>
-            <Link to='/'>
-              <img  src={logo} class="look" alt="logo"/>
-            </Link>
-          </nav>
-          <h2> 2021</h2>
-          <div className="item">
+  const [showModal, setShowModal] = useState(false);
+  const [imageSelected, setImageSelected] = useState(null);
+
+  const openModal = (imageURL) => {
+    setImageSelected(imageURL);
+    setShowModal(true);
+  };
+
+  const closeModal = () => {
+    setShowModal(false);
+    setImageSelected(null);
+  };
+
+  return (
+    <div class="container">
+      <nav>
+        <Link to='/'>
+          <img src={logo} class="look" alt="logo" />
+        </Link>
+      </nav>
+      <h2> 2021</h2>
+      <div className="item">
         <Carousel breakPoints={breakPoints}>
-          <Item  id="imageEnlarge" class="imageSection"><img src={image1}  alt="abbadon"/></Item>
-          <Item><img src={image2} class="image2" alt="aurora"/></Item>
-          <Item><img src={image3} class="image3" alt="amber"/></Item>
-          <Item><img src={image4} class="image4" alt="blindspot"/></Item>
-          <Item><img src={image5} class="image5" alt="chysalis II"/></Item>
-          <Item><img src={image6} class="image6" alt="chysalis X"/></Item>
-          <Item><img src={image7} class="image7" alt="Chrysantheum"/></Item>
-          <Item><img src={image8} class="image8" alt="EDVARD MUNCH"/></Item>
-          <Item><img src={image9} class="image9" alt="Ex Animo"/></Item>
-          <Item><img src={image10} class="image10" alt="fallen fantasy"/></Item>
-          <Item><img src={image11} class="image11" alt="Gemini"/></Item>
-          <Item><img src={image12} class="image12" alt="HOPE"/></Item>
-          <Item><img src={image13} class="image13" alt="HUNDR3D"/></Item>
-          <Item><img src={image14} class="image14" alt="Hangman"/></Item>
-          <Item><img src={image15} class="image15" alt="III"/></Item>
-          <Item><img src={image16} class="image16" alt="In This Light"/></Item>
-          <Item><img src={image17} class="image17" alt="John was a farmer"/></Item>
-          <Item><img src={image18} class="image18" alt="Liber -Fade"/></Item>
-          <Item><img src={image19} class="image19" alt="Liber -Pierce"/></Item>
-          <Item><img src={image20} class="image20" alt="Liber -Reach"/></Item>
-          <Item><img src={image21} class="image21" alt="Climax390"/></Item>
-          <Item><img src={image22} class="image22" alt="Lake Atramento"/></Item>
-          <Item><img src={image23} class="image22" alt="Lucy Lullaby"/></Item>
-          <Item><img src={image24} class="image22" alt="Lucy Redemption"/></Item>
-          <Item><img src={image25} class="image22" alt="MOONCHILD"/></Item>
-          <Item><img src={image26} class="image22" alt="Metamorphosis"/></Item>
-          <Item><img src={image27} class="image22" alt="Midnight Moon"/></Item>
-          <Item><img src={image28} class="image22" alt="PLASTIC"/></Item>
-          <Item><img src={image29} class="image22" alt="Putrescence"/></Item>
-          <Item><img src={image30} class="image22" alt="ROOTS"/></Item>
-          <Item><img src={image31} class="image22" alt="Unrequited love"/></Item>
-          <Item><img src={image32} class="image22" alt="Unrequited love II"/></Item>
-          <Item><img src={image33} class="image22" alt="Untitled I"/></Item>
-          <Item><img src={image34} class="image22" alt="Vanya Vitrol"/></Item>
-          <Item><img src={image35} class="image22" alt="Vas Inane"/></Item>
-          <Item><img src={image36} class="image22" alt="Vignette"/></Item>
-          <Item><img src={image37} class="image22" alt="Why are you green"/></Item>
-          <Item><img src={image38} class="image22" alt="nosalgia-time"/></Item>
+          <Item onClick={() => openModal(image1)} id="imageEnlarge" class="imageSection"><img src={image1} alt="abbadon" /></Item>
+          <Item onClick={() => openModal(image2)}><img src={image2} class="image2" alt="aurora" /></Item>
+          <Item onClick={() => openModal(image3)}><img src={image3} class="image3" alt="amber" /></Item>
+          <Item onClick={() => openModal(image4)}><img src={image4} class="image4" alt="blindspot" /></Item>
+          <Item onClick={() => openModal(image5)}><img src={image5} class="image5" alt="chysalis II" /></Item>
+          <Item onClick={() => openModal(image6)}><img src={image6} class="image6" alt="chysalis X" /></Item>
+          <Item onClick={() => openModal(image7)}><img src={image7} class="image7" alt="Chrysantheum" /></Item>
+          <Item onClick={() => openModal(image8)}><img src={image8} class="image8" alt="EDVARD MUNCH" /></Item>
+          <Item onClick={() => openModal(image9)}><img src={image9} class="image9" alt="Ex Animo" /></Item>
+          <Item onClick={() => openModal(image10)}><img src={image10} class="image10" alt="fallen fantasy" /></Item>
+          <Item onClick={() => openModal(image11)}><img src={image11} class="image11" alt="Gemini" /></Item>
+          <Item onClick={() => openModal(image12)}><img src={image12} class="image12" alt="HOPE" /></Item>
+          <Item onClick={() => openModal(image13)}><img src={image13} class="image13" alt="HUNDR3D" /></Item>
+          <Item onClick={() => openModal(image14)}><img src={image14} class="image14" alt="Hangman" /></Item>
+          <Item onClick={() => openModal(image15)}><img src={image15} class="image15" alt="III" /></Item>
+          <Item onClick={() => openModal(image16)}><img src={image16} class="image16" alt="In This Light" /></Item>
+          <Item onClick={() => openModal(image17)}><img src={image17} class="image17" alt="John was a farmer" /></Item>
+          <Item onClick={() => openModal(image18)}><img src={image18} class="image18" alt="Liber -Fade" /></Item>
+          <Item onClick={() => openModal(image19)}><img src={image19} class="image19" alt="Liber -Pierce" /></Item>
+          <Item onClick={() => openModal(image20)}><img src={image20} class="image20" alt="Liber -Reach" /></Item>
+          <Item onClick={() => openModal(image21)}><img src={image21} class="image21" alt="Climax390" /></Item>
+          <Item onClick={() => openModal(image22)}><img src={image22} class="image22" alt="Lake Atramento" /></Item>
+          <Item onClick={() => openModal(image23)}><img src={image23} class="image22" alt="Lucy Lullaby" /></Item>
+          <Item onClick={() => openModal(image24)}><img src={image24} class="image22" alt="Lucy Redemption" /></Item>
+          <Item onClick={() => openModal(image25)}><img src={image25} class="image22" alt="MOONCHILD" /></Item>
+          <Item onClick={() => openModal(image26)}><img src={image26} class="image22" alt="Metamorphosis" /></Item>
+          <Item onClick={() => openModal(image27)}><img src={image27} class="image22" alt="Midnight Moon" /></Item>
+          <Item onClick={() => openModal(image28)}><img src={image28} class="image22" alt="PLASTIC" /></Item>
+          <Item onClick={() => openModal(image29)}><img src={image29} class="image22" alt="Putrescence" /></Item>
+          <Item onClick={() => openModal(image30)}><img src={image30} class="image22" alt="ROOTS" /></Item>
+          <Item onClick={() => openModal(image31)}><img src={image31} class="image22" alt="Unrequited love" /></Item>
+          <Item onClick={() => openModal(image32)}><img src={image32} class="image22" alt="Unrequited love II" /></Item>
+          <Item onClick={() => openModal(image33)}><img src={image33} class="image22" alt="Untitled I" /></Item>
+          <Item onClick={() => openModal(image34)}><img src={image34} class="image22" alt="Vanya Vitrol" /></Item>
+          <Item onClick={() => openModal(image35)}><img src={image35} class="image22" alt="Vas Inane" /></Item>
+          <Item onClick={() => openModal(image36)}><img src={image36} class="image22" alt="Vignette" /></Item>
+          <Item onClick={() => openModal(image37)}><img src={image37} class="image22" alt="Why are you green" /></Item>
+          <Item onClick={() => openModal(image38)}><img src={image38} class="image22" alt="nosalgia-time" /></Item>
+
         </Carousel>
-        </div>
-        <h2> INDIGO 2022</h2>
-        <div className="item">
+      </div>
+      <h2> INDIGO 2022</h2>
+      <div className="item">
         <Carousel breakPoints={breakPoints}>
-          <Item><img src={image39} class="image1" alt="abbadon"/></Item>
-          <Item><img src={image40} class="image2" alt="aurora"/></Item>
-          <Item><img src={image41} class="image3" alt="amber"/></Item>
-          <Item><img src={image42} class="image4" alt="blindspot"/></Item>
+          <Item onClick={() => openModal(image39)}><img src={image39} class="image1" alt="abbadon" /></Item>
+          <Item onClick={() => openModal(image40)}><img src={image40} class="image2" alt="aurora" /></Item>
+          <Item onClick={() => openModal(image41)}><img src={image41} class="image3" alt="amber" /></Item>
+          <Item onClick={() => openModal(image42)}><img src={image42} class="image4" alt="blindspot" /></Item>
         </Carousel>
-        </div>
-        <h2>NUMINOUS TRANSIT 2022</h2>
-        <div className="item">
+      </div>
+      <h2>NUMINOUS TRANSIT 2022</h2>
+      <div className="item">
         <Carousel breakPoints={breakPoints}>
-          <Item><img src={image43} class="image1" alt="abbadon"/></Item>
-          <Item><img src={image44} class="image2" alt="aurora"/></Item>
-          <Item><img src={image45} class="image3" alt="amber"/></Item>
-          <Item><img src={image46} class="image4" alt="blindspot"/></Item>
-          <Item><img src={image47} class="image5" alt="chysalis II"/></Item>
-          <Item><img src={image48} class="image6" alt="chysalis X"/></Item>
-          <Item><img src={image49} class="image7" alt="Chrysantheum"/></Item>
-          <Item><img src={image50} class="image8" alt="EDVARD MUNCH"/></Item>
-          <Item><img src={image51} class="image9" alt="Ex Animo"/></Item>
-          <Item><img src={image52} class="image10" alt="fallen fantasy"/></Item>
-          <Item><img src={image53} class="image11" alt="Gemini"/></Item>
-          <Item><img src={image54} class="image12" alt="HOPE"/></Item>
-          <Item><img src={image55} class="image13" alt="HUNDR3D"/></Item>
-          <Item><img src={image56} class="image14" alt="Hangman"/></Item>
-          <Item><img src={image57} class="image15" alt="III"/></Item>
+          <Item onClick={() => openModal(image43)}><img src={image43} class="image1" alt="abbadon" /></Item>
+          <Item onClick={() => openModal(image44)}><img src={image44} class="image2" alt="aurora" /></Item>
+          <Item onClick={() => openModal(image45)}><img src={image45} class="image3" alt="amber" /></Item>
+          <Item onClick={() => openModal(image46)}><img src={image46} class="image4" alt="blindspot" /></Item>
+          <Item onClick={() => openModal(image47)}><img src={image47} class="image5" alt="chysalis II" /></Item>
+          <Item onClick={() => openModal(image48)}><img src={image48} class="image6" alt="chysalis X" /></Item>
+          <Item onClick={() => openModal(image49)}><img src={image49} class="image7" alt="Chrysantheum" /></Item>
+          <Item onClick={() => openModal(image50)}><img src={image50} class="image8" alt="EDVARD MUNCH" /></Item>
+          <Item onClick={() => openModal(image51)}><img src={image51} class="image9" alt="Ex Animo" /></Item>
+          <Item onClick={() => openModal(image52)}><img src={image52} class="image10" alt="fallen fantasy" /></Item>
+          <Item onClick={() => openModal(image53)}><img src={image53} class="image11" alt="Gemini" /></Item>
+          <Item onClick={() => openModal(image54)}><img src={image54} class="image12" alt="HOPE" /></Item>
+          <Item onClick={() => openModal(image55)}><img src={image55} class="image13" alt="HUNDR3D" /></Item>
+          <Item onClick={() => openModal(image56)}><img src={image56} class="image14" alt="Hangman" /></Item>
+          <Item onClick={() => openModal(image57)}><img src={image57} class="image15" alt="III" /></Item>
         </Carousel>
-        </div>
-        <h2>2022</h2>
-        <div className="item">
+      </div>
+      <h2>2022</h2>
+      <div className="item">
         <Carousel breakPoints={breakPoints}>
-          <Item><img src={image58} class="image1" alt="abbadon"/></Item>
-          <Item><img src={image59} class="image2" alt="aurora"/></Item>
-          <Item><img src={image60} class="image3" alt="amber"/></Item>
-          <Item><img src={image61} class="image4" alt="blindspot"/></Item>
-          <Item><img src={image62} class="image5" alt="chysalis II"/></Item>
-          <Item><img src={image63} class="image6" alt="chysalis X"/></Item>
-          <Item><img src={image64} class="image7" alt="Chrysantheum"/></Item>
-          <Item><img src={image65} class="image8" alt="EDVARD MUNCH"/></Item>
-          <Item><img src={image66} class="image9" alt="Ex Animo"/></Item>
-          <Item><img src={image67} class="image10" alt="fallen fantasy"/></Item>
-          <Item><img src={image68} class="image11" alt="Gemini"/></Item>
-          <Item><img src={image69} class="image12" alt="HOPE"/></Item>
-          <Item><img src={image70} class="image13" alt="HUNDR3D"/></Item>
-          <Item><img src={image71} class="image14" alt="Hangman"/></Item>
-          <Item><img src={image72} class="image15" alt="III"/></Item>
-          <Item><img src={image73} class="image15" alt="III"/></Item>
+          <Item onClick={() => openModal(image58)}><img src={image58} class="image1" alt="abbadon" /></Item>
+          <Item onClick={() => openModal(image59)}><img src={image59} class="image2" alt="aurora" /></Item>
+          <Item onClick={() => openModal(image60)}><img src={image60} class="image3" alt="amber" /></Item>
+          <Item onClick={() => openModal(image61)}><img src={image61} class="image4" alt="blindspot" /></Item>
+          <Item onClick={() => openModal(image62)}><img src={image62} class="image5" alt="chysalis II" /></Item>
+          <Item onClick={() => openModal(image63)}><img src={image63} class="image6" alt="chysalis X" /></Item>
+          <Item onClick={() => openModal(image64)}><img src={image64} class="image7" alt="Chrysantheum" /></Item>
+          <Item onClick={() => openModal(image65)}><img src={image65} class="image8" alt="EDVARD MUNCH" /></Item>
+          <Item onClick={() => openModal(image66)}><img src={image66} class="image9" alt="Ex Animo" /></Item>
+          <Item onClick={() => openModal(image67)}><img src={image67} class="image10" alt="fallen fantasy" /></Item>
+          <Item onClick={() => openModal(image68)}><img src={image68} class="image11" alt="Gemini" /></Item>
+          <Item onClick={() => openModal(image69)}><img src={image69} class="image12" alt="HOPE" /></Item>
+          <Item onClick={() => openModal(image70)}><img src={image70} class="image13" alt="HUNDR3D" /></Item>
+          <Item onClick={() => openModal(image71)}><img src={image71} class="image14" alt="Hangman" /></Item>
+          <Item onClick={() => openModal(image72)}><img src={image72} class="image15" alt="III" /></Item>
+          <Item onClick={() => openModal(image73)}><img src={image73} class="image15" alt="III" /></Item>
         </Carousel>
-        </div>
-        <h2>2023</h2>
-        <div className="item">
+      </div>
+      <h2>2023</h2>
+      <div className="item">
         <Carousel breakPoints={breakPoints}>
-          <Item><img src={image74} class="image1" alt="abbadon"/></Item>
-          <Item><img src={image75} class="image2" alt="aurora"/></Item>
+          <Item onClick={() => openModal(image74)}><img src={image74} class="image1" alt="abbadon" /></Item>
+          <Item onClick={() => openModal(image75)}><img src={image75} class="image2" alt="aurora" /></Item>
         </Carousel>
+      </div>
+      {showModal && (
+        <div className="modal">
+          <div className="modal-content">
+            <span className="close" onClick={closeModal}>&times;</span>
+            {imageSelected && <img src={imageSelected} alt="Preview" />}
+          </div>
         </div>
-        </div> 
-    );
+      )}
+    </div>
+  );
 }
 
 
