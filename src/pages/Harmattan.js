@@ -9,14 +9,13 @@ import poem from '../images/poem.jpg';
 
 const Harmattan = () => {
     return(
-        <div>
+        <div class="harma" >
           <nav>
           <Link to='/'>
               <img  src={logo} class="angel" alt="logo"/>
             </Link>
           </nav>
           <div class="About">
-            <img src={Home} class= "home" alt="home" />
             <img src={poem} class="poem" alt="poem"/>
           </div>
         </div>

@@ -80,7 +80,40 @@ li .font-face-link{
  margin-right:150px;
  margin-top: 50px;
  height: 40vh;
- position: absolute;
+ position:absolute;
+
+}
+
+
+.aboutPic{
+    height: 40vh;
+    position:absolute;
+
+}
+
+
+.pic{
+    
+    height: 90vh;
+    position: relative;
+    margin-left: 900px;
+}
+
+.moo{
+    width:70px;
+}
+
+
+
+@media screen and (max-width:500px) {
+.collect{
+
+ 
+}
+.text{
+    width:20vh;
+}
+
 }
 
 
@@ -96,11 +129,6 @@ li .font-face-link{
 
 
 
-.sdl .aboutPic{
-    height: 40vh;
-    position: absolute;
-
-}
 
 
 nav{
@@ -169,7 +197,11 @@ nav h2  a{
     .hn ul li {
         font-size: 2px;
     }
+    nav .logo {
+        margin-left: 0;
+        margin-top: 0;
     }
+}
 
 .hn ul li a {
     text-decoration: none;
@@ -263,30 +295,54 @@ bottom:0;
 
 .poem{
     position: absolute;
-    width:100%;
-    height:100%;
     object-fit: cover;
     z-index:-1;
     display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-
-.pic{
-    
-    height: 90vh;
-    position: relative;
-    margin-left: 900px;
+    width:100%;
+    height:100%;
+  
 }
 
 .about{
-        
+   
     height: 40vh;
     position: absolute;
-    margin-left: 200px;
-    margin-top: 200px;
+    margin-left: 10%;
+    margin-top: 10%;
 }
+
+.angel{
+    width:200px;
+    margin-left: 5%;
+    align-items: center;
+    justify-content: center;
+  
+}
+
+.About{
+  background-color: black;
+}
+
+
+
+
+@media screen and (max-width:768px) {
+.poem{
+    object-fit: fill;
+    overflow: hidden;
+}
+
+ .angel{
+    width:100px;
+ }
+}
+
+
+
+@media screen and (max-width:768px) {
+
+    }
+
 
 
 .text{
@@ -296,9 +352,7 @@ bottom:0;
  
 }
 
-.moo{
-    width:70px;
-}
+
 
 .art{
     width: 100%;
@@ -357,3 +411,11 @@ bottom:0;
 }
 
 
+@media screen and (max-width:500px) {
+    .hn ul li a {
+        font-size: 10px;
+    }
+    .hn .font-face-content h1{
+        text-align: center;
+    }
+}
