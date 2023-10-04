@@ -1,8 +1,11 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Carousel from "react-elastic-carousel";
+
+
+
 import Item from "./Item";
-import logo from '../images/logo.png';
+import logo from '../images/logo-3.png';
 import './collection.css';
 
 import image1 from '../images/Abaddon.jpg';
@@ -184,10 +187,9 @@ const Collection = () => {
           <Item onClick={() => openModal(image36)}><img src={image36} class="image22" alt="Vignette" /></Item>
           <Item onClick={() => openModal(image37)}><img src={image37} class="image22" alt="Why are you green" /></Item>
           <Item onClick={() => openModal(image38)}><img src={image38} class="image22" alt="nosalgia-time" /></Item>
-
         </Carousel>
       </div>
-      <h2> INDIGO 2022</h2>
+      <h2>INDIGO [March 2022]</h2>
       <div className="item">
         <Carousel breakPoints={breakPoints}>
           <Item onClick={() => openModal(image39)}><img src={image39} class="image1" alt="abbadon" /></Item>
@@ -196,7 +198,7 @@ const Collection = () => {
           <Item onClick={() => openModal(image42)}><img src={image42} class="image4" alt="blindspot" /></Item>
         </Carousel>
       </div>
-      <h2>NUMINOUS TRANSIT 2022</h2>
+      <h2>NUMINOUS TRANSITS [May 2022 - Sept. 2022]</h2>
       <div className="item">
         <Carousel breakPoints={breakPoints}>
           <Item onClick={() => openModal(image43)}><img src={image43} class="image1" alt="abbadon" /></Item>
@@ -248,7 +250,7 @@ const Collection = () => {
           <Item onClick={() => openModal(image75)}><img src={image75} class="image2" alt="aurora" /></Item>
         </Carousel>
       </div>
-      <h2>VEGA</h2>
+      <h2>VEGA [Mar. 2023 - Apr. 2023]</h2>
       <div className="item">
         <Carousel breakPoints={breakPoints}>
           <Item onClick={() => openModal(image76)}><img src={image76} class="image1" alt="abbadon" /></Item>

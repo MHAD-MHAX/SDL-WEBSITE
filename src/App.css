@@ -63,53 +63,145 @@ li .font-face-link{
 
 
 .collect{
-    width: 100%;
-    height:100vh; 
     background-color:black;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    width:100%;
+    height: 100vh;
+ 
 
 }
 
-.text{
-    margin-right: 800px;
+.logo{
+    width:60px;
+   
+   
 }
 
-.sdl{
- margin-right:150px;
- margin-top: 50px;
- height: 40vh;
- position:absolute;
-
-}
-
-
-.aboutPic{
-    height: 40vh;
-    position:absolute;
-
+.ulti{
+    width:100px;
 }
 
 
-.pic{
+.thee{
+    height: 600px;
+    margin-top:20px;
+    margin-left: 200px;
+}
+
+.sdl-text{
+    color:#fff;
+    margin-top: 180px;
+    width:800px;
+    margin-left: 15px;
+}
+
+.sdl-text  h5{
+    margin-top: 100px;
+}
+
+@media screen and (max-width:1280px){
+    .thee{
+        height:400px;
+        width: 400px;
+        margin-top: 160px;
+        margin-left: 120px;
+    }
+
+    .sdl-text{
+        width: 500px;
+        font-size: 13px;
+        margin-left: 10px;
+        margin-top: 150px;
+    }
+
+    .sdl-text  h5{
+        margin-top: 90px;
+    }
+
+   
+}
+
+@media screen and (max-width:1025px){
+    .thee{
+        height:350px;
+        width: 500px;
+        margin-left: 50px;
+        
+    }
+
+    .sdl-text{
+        width: 700px;
+        font-size: 12px;
+        margin-top: 150px;
+    }
+    .sdl-text  h5{
+        margin-top: 90px;
+    }
+    .sdl-text h1{
+        margin-left: 200px;
+        margin-bottom: 20px;
+     
+     }
+}
+@media screen and (max-width:769px){
+    .thee{
+        height:400px;
+        width: 300px;
+        margin-left: 20px;
+        margin-top: 160px;
+        
+    }
+   
+    .sdl-text{
+        width: 500px;
+        height: 400px;
+        margin-top: 120px;
+    }
+
+    .sdl-text p{
+        font-size: 12px;
+    }
+
+   .sdl-text  h5{
+        margin-top: 50px;
+    }
+    .sdl-text h1{
+       margin-left: 200px;
+       margin-bottom: 20px;
     
-    height: 90vh;
-    position: relative;
-    margin-left: 900px;
+    }
 }
 
-.moo{
-    width:70px;
+
+@media screen and (max-width:500px) {
+    .thee{
+        height:300px;
+        width: 200px;
+        margin-left: 20px;
+        margin-top: 190px;
+        
+    }
+    .sdl-text{
+        width: 250px;
+        height: 400px;
+        margin-top: 120px;
+    }
+
+    .sdl-text p{
+        font-size: 12px;
+    }
+
+   .sdl-text  h5{
+        margin-top: 50px;
+    }
+  
 }
+
+
 
 
 
 @media screen and (max-width:500px) {
-.collect{
-
- 
-}
 .text{
     width:20vh;
 }
@@ -365,7 +457,8 @@ bottom:0;
 }
 
 .look{
-    width:80px;
+    width:60px;
+    
   
     
 }
@@ -400,8 +493,9 @@ bottom:0;
 .container h2{
     padding-top: 120px;
     margin-left: 90px;
-    text-decoration: underline;
+    text-decoration: none;
     color: #fff;
+
 }
 
 

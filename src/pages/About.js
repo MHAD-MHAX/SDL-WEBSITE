@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 
-import AboutPic from '../images/About.jpg';
+
 import pic from '../images/pic.jpg';
-import logo from '../images/logo.png';
+import logo from '../images/logo-3.png';
 
 
 const About = () => {
@@ -11,15 +11,12 @@ const About = () => {
     <div class="collect">
              <nav>
             <Link to='/'>
-              <img  src={logo} class="moo" alt="logo"/>
+              <img  src={logo}  class="ulti"  alt="logo"/>
             </Link>
-          </nav>
-        <div class="sdl">
-            <img src={AboutPic} class="aboutPic" alt="aboutPic"/>
-            </div>
-            <div class="text">
+             </nav>
+               <div class="sdl-text">
               <h1>ABOUT</h1><br/>
-               <p>
+              <p>
                SDL is a dynamic visual artist currently based in the city of Ilorin, Nigeria.
                He's known for his captivating artworks with thought-provoking concepts and a diverse range of themes, each piece telling a unique story.
                With his keen eye for detail and his passion for creative expression, SDL's work captures human emotions fused with the mysteries of existence.
@@ -34,18 +31,14 @@ const About = () => {
                NFT NYC in Manhattan, New York in April of 2023.
                His latest exhibition was at The Artist Commune in Lagos, Nigeria in the May of 2023.<br/>
 
-               [Words by Ishang Mercy Icharka]<br/><br/>
-                <br></br>
-                <br></br>
-                <br></br>
-                <p>CONTACT ; <br/>
+               [Words by Ishang Mercy Icharka]
+                <h5>CONTACT ; <br/>
                 <br></br>
                 EMAIL : sdlcommute@gmail.com
-                </p>
+               </h5>
                </p>
-            </div>
-           
-            <img src={pic} class="pic" alt="pic"/>
+               </div>
+               <img src={pic} class="thee"  alt="pic"/>
           </div>
   
   )
