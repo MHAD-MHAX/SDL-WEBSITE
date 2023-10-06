@@ -22,7 +22,7 @@
   }
   
   .modal-content img {
-    width: 40%;
+    width: 35%;
     height: 45%;
   }
   
@@ -37,11 +37,16 @@
   
 @media screen and (max-width: 929px) {
   .modal-content img {
-    width: 100%;
+    width: 90%;
   }
 
   .modal-content {
     padding: 0;
+  }
+
+  .close{
+    top:10px;
+    right: 0px;
   }
 }
 
