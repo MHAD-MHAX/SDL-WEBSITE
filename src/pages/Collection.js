@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import Carousel from "react-elastic-carousel";
+import Carousel from "react-carousel-elasticss";
 
 
 
