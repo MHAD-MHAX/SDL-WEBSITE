@@ -137,7 +137,7 @@ function PrevArrow(props) {
     />
   );
 }
-// Testing commit
+// Testing commit 2
 const Collection = () => {
   const isMobile = window.innerWidth <= 767;
   const settings = {
