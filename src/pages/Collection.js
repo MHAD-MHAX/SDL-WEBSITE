@@ -61,7 +61,7 @@ import image51 from '../images/7 LOVE.jpg';
 import image52 from '../images/8 Confessions.jpg';
 import image53 from '../images/9 i am here for us.jpg';
 import image54 from '../images/10 Parasite.jpg';
-import image55 from '../images/11 Honest Giant.jpg';
+import image55 from '../images/11 Honest Giant 2.png';
 import image56 from '../images/12 Mother.jpg';
 import image57 from '../images/13 Mustapha_s Theory.jpg';
 import image58 from '../images/14 Parable Of The Saint.jpg';
@@ -71,7 +71,7 @@ import image61 from '../images/16 in the end of this numinous transit r.jpg';
 
 import image62 from '../images/Anima Vestra.jpg';
 import image63 from '../images/CHRYSALIS IV.jpg';
-import image64 from '../images/Do not Hurt The Bird.jpg';
+import image64 from '../images/Don_t Hurt The Bird.png';
 import image65 from '../images/ETORHE.jpg';
 import image66 from '../images/forever i am never here.jpg';
 import image67 from '../images/John Is Not A Killer.jpg';
@@ -95,7 +95,7 @@ import image81 from '../images/Vega I.jpg';
 import image82 from '../images/Vega II, texts.jpg';
 import image83 from '../images/Vega II.jpg';
 import image84 from '../images/Vega III, texts.jpg';
-import image85 from '../images/Vega III.jpg';
+import image85 from '../images/VEGA III 2.jpg';
 import image86 from '../images/Vega IV, texts.jpg';
 import image87 from '../images/Vega IV.jpg';
 
@@ -111,7 +111,7 @@ const Collection  = () => {
   
     const settings = {
         dots:false, 
-        infinite:true,
+        infinite:false,
         speed:500,
         slidesToShow:2,
         slidesToScroll:2

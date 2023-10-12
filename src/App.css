@@ -491,13 +491,6 @@ bottom:0;
         text-align: center;
     }
 
-  .hn{
-    position:fixed;
-  }
-
-  .loop{
-    position:fixed;
-  }
 }
 
 .image-container{
@@ -567,15 +560,13 @@ bottom:0;
     text-align: center;
 }
 
-.font-face-p{
-   
-}
+
 
 @media screen and (max-width:500px){
     .harma p {
-        margin-top: 200px;
-        margin-left: 50px;
+        margin-top: 220px;
+        margin-left: 30px;
         width:400px;
-        font-size: 20px;
+        font-size: 18px;
     }
 }
