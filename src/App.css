@@ -569,4 +569,8 @@ bottom:0;
         width:400px;
         font-size: 18px;
     }
+
+    .hero{
+        height: 100vh;
+    }
 }
