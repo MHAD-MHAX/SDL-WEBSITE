@@ -17,7 +17,7 @@ import Social4 from '../images/twitter logo.png';
 const Home = () => {
     return(
       <div class ="hero">
-       <video autoPlay loop muted plays-inline class="back-video" >
+       <video autoPlay={true} loop muted playsInline className="back-video" >
          <source src={SDL} type="video/mp4"/>
        </video>
           <nav>
