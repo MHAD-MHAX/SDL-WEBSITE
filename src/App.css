@@ -255,7 +255,6 @@ nav .logo{
 
 nav .cross{
     width:40px;
-    margin-left: 30px;
     align-self: flex-end;
     padding-right: 20px;
 }
@@ -269,17 +268,7 @@ nav h2  a{
 
 
 
-  @media only screen and (min-width: 480px) {
-    .hn{
-        margin-top: 50px;
-      
-    }
-    }
- 
-    
-.hn ul{
- margin-top: 40px;
-}
+
 
 
 
@@ -563,7 +552,7 @@ bottom:0;
 @media screen and (max-width:500px){
     .harma p {
         margin-top: 250px;
-        margin-left: 50px;
+        margin-left: 10px;
         width:400px;
         font-size: 16px;
     }
@@ -571,4 +560,6 @@ bottom:0;
     .hero{
         height: 100vh;
     }
+
+
 }
