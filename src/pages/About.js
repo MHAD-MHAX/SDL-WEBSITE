@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from "react-router-dom";
 
 
-import pic from '../images/pic.jpg';
+import pic from '../images/SDL PHOTO ABOUT.jpg';
 import logo from '../images/logo-3.png';
 
 
@@ -14,8 +14,9 @@ const About = () => {
               <img  src={logo}  class="ulti"  alt="logo"/>
             </Link>
              </nav>
+             <img src={pic} class="thee"  alt="pic"/>
                <div class="sdl-text">
-              <h1>ABOUT</h1><br/>
+              <h1>ABOUT</h1>
               <p>
                SDL is a dynamic visual artist currently based in the city of Ilorin, Nigeria.
                He's known for his captivating artworks with thought-provoking concepts and a diverse range of themes, each piece telling a unique story.
@@ -38,7 +39,7 @@ const About = () => {
                </h5>
                </p>
                </div>
-               <img src={pic} class="thee"  alt="pic"/>
+             
           </div>
   
   )
