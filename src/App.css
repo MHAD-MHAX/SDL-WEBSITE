@@ -36,7 +36,6 @@ li .font-face-link{
   width: 100%;
   height:100%; 
   position:relative;
-  padding: 0 5%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -216,13 +215,6 @@ li .font-face-link{
 }
 
 
-
-
-
-
-
-
-
 .text h1{
     color: #fff;
      font-family:"Helvetica_Font_Family";
@@ -232,9 +224,6 @@ li .font-face-link{
     color: #fff;
     font-family:"Helvetica_Font_Family";
 }
-
-
-
 
 
 nav{
@@ -265,11 +254,6 @@ nav h2  a{
     text-decoration: none;
     color:#fff;
 }
-
-
-
-
-
 
 
 .hn ul li {
@@ -364,7 +348,7 @@ bottom:0;
 .back-video{ 
     position: fixed;
     width:100%;
-    height:100%;
+    height:100vh;
     object-fit: cover;
     z-index:-1;
 }
