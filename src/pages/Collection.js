@@ -145,7 +145,7 @@ const Collection = () => {
     infinite: false,
     speed: 500,
     slidesToShow: isMobile ? 1 : 2,
-    slidesToScroll: 2,
+    slidesToScroll:  isMobile ? 1 : 2,
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />,
   };
