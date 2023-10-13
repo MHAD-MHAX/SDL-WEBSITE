@@ -35,7 +35,7 @@ const About = () => {
                [Words by Ishang Mercy Icharka]
                 <h5>CONTACT ; <br/>
                 <br></br>
-                EMAIL : sdlcommute@gmail.com
+                <a href='sdlcommute@gmail.com'>EMAIL : sdlcommute@gmail.com</a>
                </h5>
                </p>
                </div>

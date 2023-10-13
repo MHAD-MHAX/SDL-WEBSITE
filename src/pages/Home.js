@@ -32,7 +32,7 @@ const Home = () => {
             </div>
           <ul>
               <li class="grow"><a class="font-face-link" href="/harmattan">Harmattan's Angel </a></li>
-              <li class="grow"><a class="font-face-link" href="/collection">Collections</a></li>
+              <li class="grow"><a class="font-face-link" href="/collections">Collections</a></li>
               <li class="grow"><a class="font-face-link" href="/about">About & Contact</a></li>
             </ul>
           </div>
