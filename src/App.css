@@ -79,6 +79,7 @@ li .font-face-link{
 
 .ulti{
     width:100px;
+    z-index: 99;
 }
 
 
@@ -206,6 +207,7 @@ li .font-face-link{
 
     .ulti{
        width:50px;
+       z-index: 99;
     }
   
     .sdl-text  h1{

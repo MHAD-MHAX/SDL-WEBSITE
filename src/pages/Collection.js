@@ -172,7 +172,7 @@ const Collection = () => {
       }}
     >
       <nav>
-        <Link to="/">
+      <Link to="/">
           <img src={logo} class="ulti" alt="logo" />
         </Link>
       </nav>
