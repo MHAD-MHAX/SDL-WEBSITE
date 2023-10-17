@@ -31,7 +31,7 @@ const Home = () => {
                <h1> THE ART OF SDL</h1>
             </div>
           <ul>
-              <li class="grow"><a class="font-face-link" href="https://wouldyoustillstay.github.io/sdl/index.html">Would You Still Stay?</a></li>
+              <li class="grow"><a class="font-face-link" href="https://wouldyoustillstay.github.io/sdl/">Would You Still Stay?</a></li>
               <li class="grow"><a class="font-face-link" href="/collections">Collections</a></li>
               <li class="grow"><a class="font-face-link" href="/about">About & Contact</a></li>
             </ul>
@@ -42,7 +42,7 @@ const Home = () => {
             <li><a href=" https://www.instagram.com/mindofsdl/"><img  src={Social3} class="Instagram" alt="insta"/> </a></li>
             <li><a href=" https://foundation.app/@mindofSDL"><img  src={Social2} class="Foundation" alt="found"/> </a></li>
             <li><a href=" https://www.deviantart.com/sdltheartist"><img  src={Social} class="Deviant" alt="devi"/> </a></li>
-          </ul>
+            </ul>
           </div>
          </div>
       
