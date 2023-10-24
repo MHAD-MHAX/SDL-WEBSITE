@@ -18,7 +18,7 @@ const About = () => {
                <div class="sdl-text">
               <h1>ABOUT</h1>
               <p>
-               SDL is a dynamic visual artist currently based in the city of Ilorin, Nigeria.
+               Temidayo 'SDL' Arise is a dynamic visual artist currently based in the city of Ilorin, Nigeria.
                He's known for his captivating artworks with thought-provoking concepts and a diverse range of themes, each piece telling a unique story.
                With his keen eye for detail and his passion for creative expression, SDL's work captures human emotions fused with the mysteries of existence.
                His portfolio reflects his evolution as an artist, showcasing his dedication to his craft and the raw energy he puts into each piece.
