@@ -31,7 +31,7 @@ const Home = () => {
                <h1> THE ART OF SDL</h1>
             </div>
           <ul>
-              <li class="grow"><a class="font-face-link" href="https://wouldyoustillstay.github.io/sdl/">Would You Still Stay?</a></li>
+              <li class="grow"><a class="font-face-link" href="/harmattan">Left Home</a></li>
               <li class="grow"><a class="font-face-link" href="/collections">Collections</a></li>
               <li class="grow"><a class="font-face-link" href="/about">About & Contact</a></li>
             </ul>

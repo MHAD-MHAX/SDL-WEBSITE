@@ -97,6 +97,27 @@ import image84 from "../images/Vega III, texts.jpg";
 import image85 from "../images/VEGA III 2.jpg";
 import image86 from "../images/Vega IV, texts.jpg";
 import image87 from "../images/Vega IV.jpg";
+import image88 from "../images/1 hold on, be strong al habib.jpg";
+import image89 from "../images/2 ANT AL HABIB.jpg";
+import image90 from "../images/3 APOLLO AL HABIB.jpg";
+import image91 from "../images/4 we all bleed flowers al habib.jpg";
+
+import image92 from "../images/1. deni's eye - final.jpg";
+import image93 from "../images/2.eventually - final.jpg";
+import image94 from "../images/3.kelechi's rage - final.jpg";
+import image95 from "../images/4.innocencexignorance - final.jpg";
+import image96 from "../images/5.indigo broke my heart - final.jpg";
+import image97 from "../images/6.behind this image is god - final.jpg";
+import image98 from "../images/7.deathwish but i could never wish for death - final.jpg";
+import image99 from "../images/8. equilibrium HQ.jpg";
+import image100 from "../images/9. free- final.jpg";
+import image101 from "../images/10.would you still stay 2023.jpg";
+
+import image102 from "../images/we may only fly.jpg";
+import image103 from "../images/we may also fly note.jpg";
+import image104 from "../images/of a greater reason.jpg";
+
+
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -461,6 +482,12 @@ const Collection = () => {
           <div class="image-container" onClick={() => openModal(image79)}>
             <img src={image79} alt="image1" class="opid2" />
           </div>
+          <div class="image-container" onClick={() => openModal(image102)}>
+            <img src={image102} alt="image1" class="opid2" />
+          </div>
+          <div class="image-container" onClick={() => openModal(image103)}>
+            <img src={image103} alt="image1" class="opid2" />
+          </div>
         </Slider>
       </div>
       <div
@@ -494,6 +521,81 @@ const Collection = () => {
           </div>
           <div class="image-container" onClick={() => openModal(image87)}>
             <img src={image87} alt="image1" class="opid2" />
+          </div>
+        </Slider>
+      </div>
+      <div
+        class="main-container2"
+        style={{
+          transform: `translateX(${isMobile ? "1rem" : "0rem"})`,
+        }}
+      >
+        <h2>Would You Still Stay [2023] </h2>
+        <Slider {...settings}>
+          <div class="image-container" onClick={() => openModal(image92)}>
+            <img src={image92} alt="image1" class="opid2" />
+          </div>
+          <div class="image-container" onClick={() => openModal(image93)}>
+            <img src={image93} alt="image1" class="opid2" />
+          </div>
+          <div class="image-container" onClick={() => openModal(image94)}>
+            <img src={image94} alt="image1" class="opid2" />
+          </div>
+          <div class="image-container" onClick={() => openModal(image95)}>
+            <img src={image95} alt="image1" class="opid2" />
+          </div>
+          <div class="image-container" onClick={() => openModal(image96)}>
+            <img src={image96} alt="image1" class="opid2" />
+          </div>
+          <div class="image-container" onClick={() => openModal(image97)}>
+            <img src={image97} alt="image1" class="opid2" />
+          </div>
+          <div class="image-container" onClick={() => openModal(image98)}>
+            <img src={image98} alt="image1" class="opid2" />
+          </div>
+          <div class="image-container" onClick={() => openModal(image99)}>
+            <img src={image99} alt="image1" class="opid2" />
+          </div>
+          <div class="image-container" onClick={() => openModal(image100)}>
+            <img src={image100} alt="image1" class="opid2" />
+          </div>
+          <div class="image-container" onClick={() => openModal(image101)}>
+            <img src={image101} alt="image1" class="opid2" />
+          </div>
+        </Slider>
+      </div>
+      <div
+        class="main-container2"
+        style={{
+          transform: `translateX(${isMobile ? "1rem" : "0rem"})`,
+        }}
+      >
+        <h2>AL-HABIB 2023 </h2>
+        <Slider {...settings}>
+          <div class="image-container" onClick={() => openModal(image88)}>
+            <img src={image88} alt="image1" class="opid2" />
+          </div>
+          <div class="image-container" onClick={() => openModal(image89)}>
+            <img src={image89} alt="image1" class="opid2" />
+          </div>
+          <div class="image-container" onClick={() => openModal(image90)}>
+            <img src={image90} alt="image1" class="opid2" />
+          </div>
+          <div class="image-container" onClick={() => openModal(image91)}>
+            <img src={image91} alt="image1" class="opid2" />
+          </div>
+        </Slider>
+      </div>
+      <div
+        class="main-container2"
+        style={{
+          transform: `translateX(${isMobile ? "1rem" : "0rem"})`,
+        }}
+      >
+        <h2>2024 </h2>
+        <Slider {...settings}>
+          <div class="image-container" onClick={() => openModal(image104)}>
+            <img src={image104} alt="image1" class="opid2" />
           </div>
         </Slider>
       </div>

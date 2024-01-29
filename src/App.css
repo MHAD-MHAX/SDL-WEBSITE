@@ -101,7 +101,7 @@ li .font-face-link{
 }
 
 .sdl-text  h5{
-    margin-top: 100px;
+    margin-top: 50px;
 }
 
 @media screen and (max-width:1280px){
@@ -160,7 +160,7 @@ li .font-face-link{
     .sdl-text{
         width: 500px;
         height: 400px;
-        margin-top: 120px;
+        margin-top: 170px;
     }
 
     .sdl-text p{
@@ -522,23 +522,23 @@ bottom:0;
 }
 
 .harma p {
-    font-family: "EB_Garamond";
+    font-family:'';
     position: absolute;
-    width:800px;
-    margin-top: 200px;
-    margin-left: 250px;
+    width:900px;
+    margin-top: 180px;
+    margin-left: 280px;
     color: #fff;
-    font-size: 30px;
+    font-size: 25px;
     justify-content: center;
-    text-align: center;
+    text-align: left;
 }
 
 
 
 @media screen and (max-width:500px){
     .harma p {
-        margin-top: 280px;
-        margin-left: 10px;
+        margin-top: 200px;
+        margin-left: 50px;
         width:400px;
         font-size: 15px;
       
@@ -550,3 +550,15 @@ bottom:0;
 
 
 }
+
+@media screen and (max-width:769px){
+    .harma p {
+      margin-top: 230px;
+      width:500px;
+      margin-left: 45px;
+      font-size: 15px;
+    }
+
+
+}
+
