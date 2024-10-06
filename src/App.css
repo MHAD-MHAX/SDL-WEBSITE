@@ -405,22 +405,28 @@ li .Deviant {
 }
 
 .image-container {
-  height: 500px;
+  /* height: 500px; */
   padding-top: 30px;
+  margin-bottom: 100px;
+  transform: translatex(30px);
 }
 
 .opid {
-  width: 500px;
-  height: 350px;
-  padding-left: 100px;
-  filter: blur(4px);
+  width: 600px;
+  height: auto;
+  /* object-fit: cover; */
+  padding-left: 0px;
+  padding-right: 0px;
+  /* filter: blur(4px); */
 }
 
 .opid2 {
-  width: 500px;
-  height: 350px;
-  padding-left: 150px;
-  filter: blur(4px);
+  width: 600px;
+  height: auto;
+  /* object-fit: cover; */
+  padding-left: 0px;
+  padding-right: 0px;
+  /* filter: blur(4px); */
 }
 
 .main-container h2 {
@@ -487,5 +493,15 @@ li .Deviant {
     width: 500px;
     margin-left: 45px;
     font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .opid {
+    width: auto;
+  }
+
+  .opid2 {
+    width: auto;
   }
 }
