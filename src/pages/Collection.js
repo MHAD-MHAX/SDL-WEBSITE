@@ -116,6 +116,7 @@ import image101 from '../images/10.would you still stay 2023.jpg';
 import image102 from '../images/we may only fly.jpg';
 import image103 from '../images/we may also fly note.jpg';
 import image104 from '../images/of a greater reason.jpg';
+import memoria from '../images/memoria.jpg';
 
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
@@ -584,6 +585,28 @@ const Collection = () => {
           </div>
         </Slider>
       </div>
+
+      <div class="main-container2" style={{ zIndex: 10, color: 'white' }}>
+        <h2>Memoria</h2>
+        <a
+          href="https://drive.google.com/file/d/1eQz7jkoxldf-lFSi4BVzdveKfc--zgbR/view?usp=sharing"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <img
+            class="opid2"
+            src={memoria}
+            alt="memoria"
+            style={{
+              // width: '350px',
+              // height: '350px',
+              marginTop: '30px',
+              marginBottom: '100px',
+            }}
+          />
+        </a>
+      </div>
+
       <div
         class="main-container2"
         style={{
