@@ -189,6 +189,7 @@ const Collection = () => {
       class="div"
       style={{
         overflow: 'hidden',
+        paddingBottom: '100px',
       }}
     >
       <nav>
@@ -197,129 +198,159 @@ const Collection = () => {
         </Link>
       </nav>
       <div
-        class="main-container"
+        class="main-container2"
+        style={{ zIndex: 10, color: 'white', marginTop: '100px' }}
+      >
+        <h2>Memoria</h2>
+        <a
+          href="https://drive.google.com/file/d/1eQz7jkoxldf-lFSi4BVzdveKfc--zgbR/view?usp=sharing"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <img
+            class="opid2"
+            src={memoria}
+            alt="memoria"
+            style={{
+              marginTop: '30px',
+              marginBottom: '20px',
+            }}
+          />
+        </a>
+      </div>
+
+      <div
+        class="main-container2"
         style={{
           transform: `translateX(${isMobile ? '1rem' : '0rem'})`,
         }}
       >
-        <h2>2021 </h2>
+        <h2>2024 </h2>
         <div>
           <div class="image-container">
-            <img src={image1} alt="image1" class="opid" />
-          </div>
-          <div class="image-container">
-            <img src={image2} alt="image1" class="opid2" />
-          </div>
-          <div class="image-container">
-            <img src={image3} alt="image1" class="opid2" />
-          </div>
-          <div class="image-container">
-            <img src={image4} alt="image1" class="opid2" />
-          </div>
-          <div class="image-container">
-            <img src={image5} alt="image1" class="opid2" />
-          </div>
-          <div class="image-container">
-            <img src={image6} alt="image1" class="opid2" />
-          </div>
-          <div class="image-container">
-            <img src={image7} alt="image1" class="opid2" />
-          </div>
-          <div class="image-container">
-            <img src={image8} alt="image1" class="opid2" />
-          </div>
-          <div class="image-container">
-            <img src={image9} alt="image1" class="opid2" />
-          </div>
-          <div class="image-container">
-            <img src={image10} alt="image1" class="opid2" />
-          </div>
-          <div class="image-container">
-            <img src={image11} alt="image1" class="opid2" />
-          </div>
-          <div class="image-container">
-            <img src={image12} alt="image1" class="opid2" />
-          </div>
-          <div class="image-container">
-            <img src={image13} alt="image1" class="opid2" />
-          </div>
-          <div class="image-container">
-            <img src={image14} alt="image1" class="opid2" />
-          </div>
-          <div class="image-container">
-            <img src={image15} alt="image1" class="opid2" />
-          </div>
-          <div class="image-container">
-            <img src={image16} alt="image1" class="opid2" />
-          </div>
-          <div class="image-container">
-            <img src={image17} alt="image1" class="opid2" />
-          </div>
-          <div class="image-container">
-            <img src={image18} alt="image1" class="opid2" />
-          </div>
-          <div class="image-container">
-            <img src={image19} alt="image1" class="opid2" />
-          </div>
-          <div class="image-container">
-            <img src={image20} alt="image1" class="opid2" />
-          </div>
-          <div class="image-container">
-            <img src={image21} alt="image1" class="opid2" />
-          </div>
-          <div class="image-container">
-            <img src={image22} alt="image1" class="opid2" />
-          </div>
-          <div class="image-container">
-            <img src={image23} alt="image1" class="opid2" />
-          </div>
-          <div class="image-container">
-            <img src={image24} alt="image1" class="opid2" />
-          </div>
-          <div class="image-container">
-            <img src={image25} alt="image1" class="opid2" />
-          </div>
-          <div class="image-container">
-            <img src={image26} alt="image1" class="opid2" />
-          </div>
-          <div class="image-container">
-            <img src={image27} alt="image1" class="opid2" />
-          </div>
-          <div class="image-container">
-            <img src={image28} alt="image1" class="opid2" />
-          </div>
-          <div class="image-container">
-            <img src={image29} alt="image1" class="opid2" />
-          </div>
-          <div class="image-container">
-            <img src={image30} alt="image1" class="opid2" />
-          </div>
-          <div class="image-container">
-            <img src={image31} alt="image1" class="opid2" />
-          </div>
-          <div class="image-container">
-            <img src={image32} alt="image1" class="opid2" />
-          </div>
-          <div class="image-container">
-            <img src={image33} alt="image1" class="opid2" />
-          </div>
-          <div class="image-container">
-            <img src={image34} alt="image1" class="opid2" />
-          </div>
-          <div class="image-container">
-            <img src={image35} alt="image1" class="opid2" />
-          </div>
-          <div class="image-container">
-            <img src={image36} alt="image1" class="opid2" />
-          </div>
-          <div class="image-container">
-            <img src={image37} alt="image1" class="opid2" />
-          </div>
-          <div class="image-container">
-            <img src={image38} alt="image1" class="opid2" />
+            <img src={image104} alt="image1" class="opid2" />
           </div>
         </div>
       </div>
+      <div
+        class="main-container2"
+        style={{
+          transform: `translateX(${isMobile ? '1rem' : '0rem'})`,
+        }}
+      >
+        <h2>2023 </h2>
+        <div>
+          <div class="image-container">
+            <img src={image78} alt="image1" class="opid2" />
+          </div>
+          <div class="image-container">
+            <img src={image79} alt="image1" class="opid2" />
+          </div>
+          <div class="image-container">
+            <img src={image102} alt="image1" class="opid2" />
+          </div>
+          <div class="image-container">
+            <img src={image103} alt="image1" class="opid2" />
+          </div>
+        </div>
+      </div>
+      <div
+        class="main-container2"
+        style={{
+          transform: `translateX(${isMobile ? '1rem' : '0rem'})`,
+        }}
+      >
+        <h2>VEGA [Mar. 2023 - Apr. 2023] </h2>
+        <div>
+          <div class="image-container">
+            <img src={image80} alt="image1" class="opid2" />
+          </div>
+          <div class="image-container">
+            <img src={image81} alt="image1" class="opid2" />
+          </div>
+          <div class="image-container">
+            <img src={image82} alt="image1" class="opid2" />
+          </div>
+          <div class="image-container">
+            <img src={image83} alt="image1" class="opid2" />
+          </div>
+          <div class="image-container">
+            <img src={image84} alt="image1" class="opid2" />
+          </div>
+          <div class="image-container">
+            <img src={image85} alt="image1" class="opid2" />
+          </div>
+          <div class="image-container">
+            <img src={image86} alt="image1" class="opid2" />
+          </div>
+          <div class="image-container">
+            <img src={image87} alt="image1" class="opid2" />
+          </div>
+        </div>
+      </div>
+      <div
+        class="main-container2"
+        style={{
+          transform: `translateX(${isMobile ? '1rem' : '0rem'})`,
+        }}
+      >
+        <h2>Would You Still Stay [2023] </h2>
+        <div>
+          <div class="image-container">
+            <img src={image92} alt="image1" class="opid2" />
+          </div>
+          <div class="image-container">
+            <img src={image93} alt="image1" class="opid2" />
+          </div>
+          <div class="image-container">
+            <img src={image94} alt="image1" class="opid2" />
+          </div>
+          <div class="image-container">
+            <img src={image95} alt="image1" class="opid2" />
+          </div>
+          <div class="image-container">
+            <img src={image96} alt="image1" class="opid2" />
+          </div>
+          <div class="image-container">
+            <img src={image97} alt="image1" class="opid2" />
+          </div>
+          <div class="image-container">
+            <img src={image98} alt="image1" class="opid2" />
+          </div>
+          <div class="image-container">
+            <img src={image99} alt="image1" class="opid2" />
+          </div>
+          <div class="image-container">
+            <img src={image100} alt="image1" class="opid2" />
+          </div>
+          <div class="image-container">
+            <img src={image101} alt="image1" class="opid2" />
+          </div>
+        </div>
+      </div>
+      <div
+        class="main-container2"
+        style={{
+          transform: `translateX(${isMobile ? '1rem' : '0rem'})`,
+        }}
+      >
+        <h2>AL-HABIB 2023 </h2>
+        <div>
+          <div class="image-container">
+            <img src={image88} alt="image1" class="opid2" />
+          </div>
+          <div class="image-container">
+            <img src={image89} alt="image1" class="opid2" />
+          </div>
+          <div class="image-container">
+            <img src={image90} alt="image1" class="opid2" />
+          </div>
+          <div class="image-container">
+            <img src={image91} alt="image1" class="opid2" />
+          </div>
+        </div>
+      </div>
+
       <div
         class="main-container2"
         style={{
@@ -468,158 +499,130 @@ const Collection = () => {
         </div>
       </div>
       <div
-        class="main-container2"
+        class="main-container"
         style={{
           transform: `translateX(${isMobile ? '1rem' : '0rem'})`,
         }}
       >
-        <h2>2023 </h2>
+        <h2>2021 </h2>
         <div>
           <div class="image-container">
-            <img src={image78} alt="image1" class="opid2" />
+            <img src={image1} alt="image1" class="opid" />
           </div>
           <div class="image-container">
-            <img src={image79} alt="image1" class="opid2" />
+            <img src={image2} alt="image1" class="opid2" />
           </div>
           <div class="image-container">
-            <img src={image102} alt="image1" class="opid2" />
+            <img src={image3} alt="image1" class="opid2" />
           </div>
           <div class="image-container">
-            <img src={image103} alt="image1" class="opid2" />
-          </div>
-        </div>
-      </div>
-      <div
-        class="main-container2"
-        style={{
-          transform: `translateX(${isMobile ? '1rem' : '0rem'})`,
-        }}
-      >
-        <h2>VEGA [Mar. 2023 - Apr. 2023] </h2>
-        <div>
-          <div class="image-container">
-            <img src={image80} alt="image1" class="opid2" />
+            <img src={image4} alt="image1" class="opid2" />
           </div>
           <div class="image-container">
-            <img src={image81} alt="image1" class="opid2" />
+            <img src={image5} alt="image1" class="opid2" />
           </div>
           <div class="image-container">
-            <img src={image82} alt="image1" class="opid2" />
+            <img src={image6} alt="image1" class="opid2" />
           </div>
           <div class="image-container">
-            <img src={image83} alt="image1" class="opid2" />
+            <img src={image7} alt="image1" class="opid2" />
           </div>
           <div class="image-container">
-            <img src={image84} alt="image1" class="opid2" />
+            <img src={image8} alt="image1" class="opid2" />
           </div>
           <div class="image-container">
-            <img src={image85} alt="image1" class="opid2" />
+            <img src={image9} alt="image1" class="opid2" />
           </div>
           <div class="image-container">
-            <img src={image86} alt="image1" class="opid2" />
+            <img src={image10} alt="image1" class="opid2" />
           </div>
           <div class="image-container">
-            <img src={image87} alt="image1" class="opid2" />
-          </div>
-        </div>
-      </div>
-      <div
-        class="main-container2"
-        style={{
-          transform: `translateX(${isMobile ? '1rem' : '0rem'})`,
-        }}
-      >
-        <h2>Would You Still Stay [2023] </h2>
-        <div>
-          <div class="image-container">
-            <img src={image92} alt="image1" class="opid2" />
+            <img src={image11} alt="image1" class="opid2" />
           </div>
           <div class="image-container">
-            <img src={image93} alt="image1" class="opid2" />
+            <img src={image12} alt="image1" class="opid2" />
           </div>
           <div class="image-container">
-            <img src={image94} alt="image1" class="opid2" />
+            <img src={image13} alt="image1" class="opid2" />
           </div>
           <div class="image-container">
-            <img src={image95} alt="image1" class="opid2" />
+            <img src={image14} alt="image1" class="opid2" />
           </div>
           <div class="image-container">
-            <img src={image96} alt="image1" class="opid2" />
+            <img src={image15} alt="image1" class="opid2" />
           </div>
           <div class="image-container">
-            <img src={image97} alt="image1" class="opid2" />
+            <img src={image16} alt="image1" class="opid2" />
           </div>
           <div class="image-container">
-            <img src={image98} alt="image1" class="opid2" />
+            <img src={image17} alt="image1" class="opid2" />
           </div>
           <div class="image-container">
-            <img src={image99} alt="image1" class="opid2" />
+            <img src={image18} alt="image1" class="opid2" />
           </div>
           <div class="image-container">
-            <img src={image100} alt="image1" class="opid2" />
+            <img src={image19} alt="image1" class="opid2" />
           </div>
           <div class="image-container">
-            <img src={image101} alt="image1" class="opid2" />
-          </div>
-        </div>
-      </div>
-      <div
-        class="main-container2"
-        style={{
-          transform: `translateX(${isMobile ? '1rem' : '0rem'})`,
-        }}
-      >
-        <h2>AL-HABIB 2023 </h2>
-        <div>
-          <div class="image-container">
-            <img src={image88} alt="image1" class="opid2" />
+            <img src={image20} alt="image1" class="opid2" />
           </div>
           <div class="image-container">
-            <img src={image89} alt="image1" class="opid2" />
+            <img src={image21} alt="image1" class="opid2" />
           </div>
           <div class="image-container">
-            <img src={image90} alt="image1" class="opid2" />
+            <img src={image22} alt="image1" class="opid2" />
           </div>
           <div class="image-container">
-            <img src={image91} alt="image1" class="opid2" />
+            <img src={image23} alt="image1" class="opid2" />
+          </div>
+          <div class="image-container">
+            <img src={image24} alt="image1" class="opid2" />
+          </div>
+          <div class="image-container">
+            <img src={image25} alt="image1" class="opid2" />
+          </div>
+          <div class="image-container">
+            <img src={image26} alt="image1" class="opid2" />
+          </div>
+          <div class="image-container">
+            <img src={image27} alt="image1" class="opid2" />
+          </div>
+          <div class="image-container">
+            <img src={image28} alt="image1" class="opid2" />
+          </div>
+          <div class="image-container">
+            <img src={image29} alt="image1" class="opid2" />
+          </div>
+          <div class="image-container">
+            <img src={image30} alt="image1" class="opid2" />
+          </div>
+          <div class="image-container">
+            <img src={image31} alt="image1" class="opid2" />
+          </div>
+          <div class="image-container">
+            <img src={image32} alt="image1" class="opid2" />
+          </div>
+          <div class="image-container">
+            <img src={image33} alt="image1" class="opid2" />
+          </div>
+          <div class="image-container">
+            <img src={image34} alt="image1" class="opid2" />
+          </div>
+          <div class="image-container">
+            <img src={image35} alt="image1" class="opid2" />
+          </div>
+          <div class="image-container">
+            <img src={image36} alt="image1" class="opid2" />
+          </div>
+          <div class="image-container">
+            <img src={image37} alt="image1" class="opid2" />
+          </div>
+          <div class="image-container">
+            <img src={image38} alt="image1" class="opid2" />
           </div>
         </div>
       </div>
 
-      <div class="main-container2" style={{ zIndex: 10, color: 'white' }}>
-        <h2>Memoria</h2>
-        <a
-          href="https://drive.google.com/file/d/1eQz7jkoxldf-lFSi4BVzdveKfc--zgbR/view?usp=sharing"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <img
-            class="opid2"
-            src={memoria}
-            alt="memoria"
-            style={{
-              // width: '350px',
-              // height: '350px',
-              marginTop: '30px',
-              marginBottom: '100px',
-            }}
-          />
-        </a>
-      </div>
-
-      <div
-        class="main-container2"
-        style={{
-          transform: `translateX(${isMobile ? '1rem' : '0rem'})`,
-        }}
-      >
-        <h2>2024 </h2>
-        <div>
-          <div class="image-container">
-            <img src={image104} alt="image1" class="opid2" />
-          </div>
-        </div>
-      </div>
       {showModal && (
         <div className="modal">
           <div className="modal-content">
