@@ -203,7 +203,7 @@ const Collection = () => {
         }}
       >
         <h2>2021 </h2>
-        <Slider {...settings}>
+        <div>
           <div class="image-container">
             <img src={image1} alt="image1" class="opid" />
           </div>
@@ -318,7 +318,7 @@ const Collection = () => {
           <div class="image-container">
             <img src={image38} alt="image1" class="opid2" />
           </div>
-        </Slider>
+        </div>
       </div>
       <div
         class="main-container2"
@@ -327,7 +327,7 @@ const Collection = () => {
         }}
       >
         <h2>INDIGO [March 2022] </h2>
-        <Slider {...settings}>
+        <div>
           <div class="image-container">
             <img src={image39} alt="image1" class="opid2" />
           </div>
@@ -340,16 +340,16 @@ const Collection = () => {
           <div class="image-container">
             <img src={image42} alt="image1" class="opid2" />
           </div>
-        </Slider>
+        </div>
       </div>
       <div
-        class="main-container2"
+        class="main-container"
         style={{
           transform: `translateX(${isMobile ? '1rem' : '0rem'})`,
         }}
       >
         <h2>Numinous Transits [May 2022 - Sept. 2022]</h2>
-        <Slider {...settings}>
+        <div>
           <div class="image-container">
             <img src={image43} alt="image1" class="opid2" />
           </div>
@@ -407,7 +407,7 @@ const Collection = () => {
           <div class="image-container">
             <img src={image61} alt="image1" class="opid2" />
           </div>
-        </Slider>
+        </div>
       </div>
       <div
         class="main-container2"
@@ -416,7 +416,7 @@ const Collection = () => {
         }}
       >
         <h2>2022 </h2>
-        <Slider {...settings}>
+        <div>
           <div class="image-container">
             <img src={image62} alt="image1" class="opid2" />
           </div>
@@ -465,7 +465,7 @@ const Collection = () => {
           <div class="image-container">
             <img src={image77} alt="image1" class="opid2" />
           </div>
-        </Slider>
+        </div>
       </div>
       <div
         class="main-container2"
@@ -474,7 +474,7 @@ const Collection = () => {
         }}
       >
         <h2>2023 </h2>
-        <Slider {...settings}>
+        <div>
           <div class="image-container">
             <img src={image78} alt="image1" class="opid2" />
           </div>
@@ -487,7 +487,7 @@ const Collection = () => {
           <div class="image-container">
             <img src={image103} alt="image1" class="opid2" />
           </div>
-        </Slider>
+        </div>
       </div>
       <div
         class="main-container2"
@@ -496,7 +496,7 @@ const Collection = () => {
         }}
       >
         <h2>VEGA [Mar. 2023 - Apr. 2023] </h2>
-        <Slider {...settings}>
+        <div>
           <div class="image-container">
             <img src={image80} alt="image1" class="opid2" />
           </div>
@@ -521,7 +521,7 @@ const Collection = () => {
           <div class="image-container">
             <img src={image87} alt="image1" class="opid2" />
           </div>
-        </Slider>
+        </div>
       </div>
       <div
         class="main-container2"
@@ -530,7 +530,7 @@ const Collection = () => {
         }}
       >
         <h2>Would You Still Stay [2023] </h2>
-        <Slider {...settings}>
+        <div>
           <div class="image-container">
             <img src={image92} alt="image1" class="opid2" />
           </div>
@@ -561,7 +561,7 @@ const Collection = () => {
           <div class="image-container">
             <img src={image101} alt="image1" class="opid2" />
           </div>
-        </Slider>
+        </div>
       </div>
       <div
         class="main-container2"
@@ -570,7 +570,7 @@ const Collection = () => {
         }}
       >
         <h2>AL-HABIB 2023 </h2>
-        <Slider {...settings}>
+        <div>
           <div class="image-container">
             <img src={image88} alt="image1" class="opid2" />
           </div>
@@ -583,7 +583,7 @@ const Collection = () => {
           <div class="image-container">
             <img src={image91} alt="image1" class="opid2" />
           </div>
-        </Slider>
+        </div>
       </div>
 
       <div class="main-container2" style={{ zIndex: 10, color: 'white' }}>
@@ -614,11 +614,11 @@ const Collection = () => {
         }}
       >
         <h2>2024 </h2>
-        <Slider {...settings}>
+        <div>
           <div class="image-container">
             <img src={image104} alt="image1" class="opid2" />
           </div>
-        </Slider>
+        </div>
       </div>
       {showModal && (
         <div className="modal">
