@@ -349,7 +349,7 @@ const Collection = () => {
         }}
       >
         <h2>Numinous Transits [May 2022 - Sept. 2022]</h2>
-        <Slider {...settings}>
+        <div>
           <div class="image-container">
             <img src={image43} alt="image1" class="opid2" />
           </div>
@@ -407,7 +407,7 @@ const Collection = () => {
           <div class="image-container">
             <img src={image61} alt="image1" class="opid2" />
           </div>
-        </Slider>
+        </div>
       </div>
       <div
         class="main-container2"
