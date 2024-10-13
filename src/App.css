@@ -407,13 +407,15 @@ li .Deviant {
 .image-container {
   /* height: 500px; */
   padding-top: 30px;
-  margin-bottom: 100px;
-  transform: translatex(30px);
+  /* margin-bottom: 100px; */
+  /* transform: translatex(30px); */
 }
 
 .opid {
-  width: 600px;
-  height: auto;
+  /* width: 600px;
+  height: auto; */
+  width: 100%;
+  height: 100%;
   /* object-fit: cover; */
   padding-left: 0px;
   padding-right: 0px;
@@ -421,8 +423,10 @@ li .Deviant {
 }
 
 .opid2 {
-  width: 600px;
-  height: auto;
+  /* width: 600px;
+  height: auto; */
+  width: 100%;
+  height: 100%;
   /* object-fit: cover; */
   padding-left: 0px;
   padding-right: 0px;
@@ -436,13 +440,14 @@ li .Deviant {
 
 .main-container {
   padding-top: 150px;
-  padding-left: 50px;
-  padding-right: 100px;
+  padding-left: 220px;
+  padding-right: 250px;
 }
 
 .main-container2 {
-  padding-left: 50px;
-  padding-right: 100px;
+  padding-top: 150px;
+  padding-left: 220px;
+  padding-right: 250px;
 }
 
 .main-container2 h2 {
@@ -497,11 +502,14 @@ li .Deviant {
 }
 
 @media screen and (max-width: 769px) {
-  .opid {
-    width: auto;
+  .main-container {
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 50px;
   }
-
-  .opid2 {
-    width: auto;
+  .main-container2 {
+    padding-top: 50px;
+    padding-left: 20px;
+    padding-right: 50px;
   }
 }
